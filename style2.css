@@ -1,0 +1,513 @@
+body {
+	background:#2a1254;
+	margin:0;
+	font-family: 'Noto Serif Display', serif;
+    font-size:24pt;
+}
+
+.disclaimer {
+display:none;
+}
+.bgcontent {
+	flex: 1;
+	margin:auto;
+	padding:10pt;
+	color:#e5e5e5;
+	background:#e8e8e8;
+	border-radius:5pt;
+	display:flex;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-shadow: 20px 24px 22px 10px rgb(0 0 0 / 40%);
+	transition: 1s ease;
+}
+@media only screen and (max-width: 720px) {
+  .bgcontent {
+    width:90%;
+    height:70%;
+	transition: 1s ease;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1365px) {
+  .bgcontent {
+	width:calc(100% - 350px);
+	height:auto;
+	transition: 1s ease;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  .bgcontent {
+	width:calc(100% - 950px);
+	height:auto;
+	transition: 1s ease;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  .bgcontent {
+    width:auto;
+	height:auto;
+	transition: 1s ease;
+  }
+}
+img {
+width:100%;
+}
+
+p{  display:none;}
+
+a { color:#20b5ff; text-decoration:none; transition: 1s ease;}
+a:hover { color:#ff61b0; text-decoration:none; transition: 1s ease;}
+
+@keyframes color-change {
+  0% { color: #FED803; }
+  50% { color: #F80016; }
+  100% { color: #FED803; }
+}
+table {
+	width:100%;
+	text-align: center;
+	color:white;
+}
+
+button:hover {
+	opacity:80%;
+	color:#F80016;
+	transition: .4s ease;
+}
+
+button {
+	position: relative;
+	border: none;
+	font-size: 10pt;
+	padding: 40px;
+	text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+	width:100%;
+	height:80px;
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: copy;
+	border-radius:1px;
+	transition:background-color 0.2s ease;
+	padding:10px; 
+	transition: .4s ease;
+}
+
+button:after {
+  content: "";
+  background: #F80016;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.titlesong {
+width:100%;
+color:white;
+display:flex;
+justify-content: center;
+top: 16%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, -140%);
+}
+.description{
+width:100%;
+color:white;
+font-size:35%;
+display:flex;
+justify-content: center;
+top: 85%;
+left: 50%;
+position: absolute;
+transform: translate(-50%, 110%);
+}
+
+
+/* Saigo no Tight hug */
+.bg-snth1-1 {background-color:#BEBDBF;}
+.bg-snth1-2 {background-color:#8C6746;}
+.bg-snth1-3 {background-color:#734A32;}
+.bg-snth1-4 {background-color:#593122;}
+.bg-snth1-5 {background-color:#1C2134;}
+.bg-snth2-1 {background-color:#4C5973;}
+.bg-snth2-2 {background-color:#A4B3BF;}
+.bg-snth2-3 {background-color:#5386A6;}
+.bg-snth2-4 {background-color:#4B5936;}
+.bg-snth2-5 {background-color:#39402A;}
+.bg-snth3-1 {background-color:#BF5065;}
+.bg-snth3-2 {background-color:#324028;}
+.bg-snth3-3 {background-color:#D9AD77;}
+.bg-snth3-4 {background-color:#8C6E5D;}
+.bg-snth3-5 {background-color:#8C2020;}
+.bg-snth4-1 {background-color:#8D86A6;}
+.bg-snth4-2 {background-color:#B0B2BF;}
+.bg-snth4-3 {background-color:#5D84A6;}
+.bg-snth4-4 {background-color:#515958;}
+.bg-snth4-5 {background-color:#707365;}
+.bg-snth5-1 {background-color:#797291;}
+.bg-snth5-2 {background-color:#A4A4C0;}
+.bg-snth5-3 {background-color:#11538C;}
+.bg-snth5-4 {background-color:#AFC0D4;}
+.bg-snth5-5 {background-color:#83816C;}
+.bg-snth6-1 {background-color:#8697A6;}
+.bg-snth6-2 {background-color:#3A5068;}
+.bg-snth6-3 {background-color:#AAB7BF;}
+.bg-snth6-4 {background-color:#4E5946;}
+.bg-snth6-5 {background-color:#67734D;}
+.bg-snth7-1 {background-color:#555673;}
+.bg-snth7-2 {background-color:#212832;}
+.bg-snth7-3 {background-color:#364C59;}
+.bg-snth7-4 {background-color:#A6652D;}
+.bg-snth7-5 {background-color:#733620;}
+.bg-snth8-1 {background-color:#593640;}
+.bg-snth8-2 {background-color:#222326;}
+.bg-snth8-3 {background-color:#495F6C;}
+.bg-snth8-4 {background-color:#B2B9B1;}
+.bg-snth8-5 {background-color:#93797C;}
+/* Toki no Wadachi */
+.bg-tnw1-1 {background-color:#76568C;}
+.bg-tnw1-2 {background-color:#280559;}
+.bg-tnw1-3 {background-color:#141E26;}
+.bg-tnw1-4 {background-color:#A6A498;}
+.bg-tnw1-5 {background-color:#D9D0BF;}
+.bg-tnw2-1 {background-color:#7F58A6;}
+.bg-tnw2-2 {background-color:#8563A6;}
+.bg-tnw2-3 {background-color:#542B8C;}
+.bg-tnw2-4 {background-color:#4D735D;}
+.bg-tnw2-5 {background-color:#A6A197;}
+.bg-tnw3-1 {background-color:#A64962;}
+.bg-tnw3-2 {background-color:#010B40;}
+.bg-tnw3-3 {background-color:#657BA6;}
+.bg-tnw3-4 {background-color:#073359;}
+.bg-tnw3-5 {background-color:#8C6056:}
+.bg-tnw4-1 {background-color:#230740;}
+.bg-tnw4-2 {background-color:#421F73;}
+.bg-tnw4-3 {background-color:#A67D4B;}
+.bg-tnw4-4 {background-color:#8C7A69;}
+.bg-tnw4-5 {background-color:#733E20;}
+.bg-tnw5-1 {background-color:#442273;}
+.bg-tnw5-2 {background-color:#6C548C;}
+.bg-tnw5-3 {background-color:#171F26;}
+.bg-tnw5-4 {background-color:#D9D9D9;}
+.bg-tnw5-5 {background-color:#8C8C8B;}
+.bg-tnw6-1 {background-color:#735F64;}
+.bg-tnw6-2 {background-color:#363F59;}
+.bg-tnw6-3 {background-color:#182426;}
+.bg-tnw6-4 {background-color:#8C8C84;}
+.bg-tnw6-5 {background-color:#73653D;}
+.bg-tnw7-1 {background-color:#240235;}
+.bg-tnw7-2 {background-color:#100126;}
+.bg-tnw7-3 {background-color:#756146;}
+.bg-tnw7-4 {background-color:#D9C2AD;}
+.bg-tnw7-5 {background-color:#593825;}
+.bg-tnw8-1 {background-color:#010326;}
+.bg-tnw8-2 {background-color:#0A4B59;}
+.bg-tnw8-3 {background-color:#687273;}
+.bg-tnw8-4 {background-color:#A6A5A1;}
+.bg-tnw8-5 {background-color:#8C7669;}
+/* Anata kara Sotsugyou */
+.bg-aks1-1 {background-color:#8C273A;}
+.bg-aks1-2 {background-color:#082326;}
+.bg-aks1-3 {background-color:#127361;}
+.bg-aks1-4 {background-color:#A68A72;}
+.bg-aks1-5 {background-color:#8C4A3B;}
+.bg-aks2-1 {background-color:#8D2428;}
+.bg-aks2-2 {background-color:#0D0A0C;}
+.bg-aks2-3 {background-color:#B4A0A2;}
+.bg-aks2-4 {background-color:#6D56BF;}
+.bg-aks2-5 {background-color:#B9B8BF;}
+.bg-aks3-1 {background-color:#BF064A;}
+.bg-aks3-2 {background-color:#F25CA2;}
+.bg-aks3-3 {background-color:#4EABBF;}
+.bg-aks3-4 {background-color:#F2EDA7;}
+.bg-aks3-5 {background-color:#BF7E06;}
+.bg-aks4-1 {background-color:#C0083A;}
+.bg-aks4-2 {background-color:#D9D7D8;}
+.bg-aks4-3 {background-color:#57476E;}
+.bg-aks4-4 {background-color:#232126;}
+.bg-aks4-5 {background-color:#DBB337;}
+.bg-aks5-1 {background-color:#40222A;}
+.bg-aks5-2 {background-color:#D9C7CE;}
+.bg-aks5-3 {background-color:#A62662;}
+.bg-aks5-4 {background-color:#A65858;}
+.bg-aks5-5 {background-color:#BF8A8A;}
+.bg-aks6-1 {background-color:#A60530;}
+.bg-aks6-2 {background-color:#D9D0D6;}
+.bg-aks6-3 {background-color:#BFBDBF;}
+.bg-aks6-4 {background-color:#0D4373;}
+.bg-aks6-5 {background-color:#A67468;}
+.bg-aks7-1 {background-color:#9B0640;}
+.bg-aks7-2 {background-color:#6D5563;}
+.bg-aks7-3 {background-color:#D85A32;}
+.bg-aks7-4 {background-color:#E6CEA8;}
+.bg-aks7-5 {background-color:#ED7B63;}
+.bg-aks8-1 {background-color:#BFB8BD;}
+.bg-aks8-2 {background-color:#D8D7D9;}
+.bg-aks8-3 {background-color:#7C648C;}
+.bg-aks8-4 {background-color:#18608C;}
+.bg-aks8-5 {background-color:#A69286;}
+/* hard to say */
+.bg-hts1-1{background-color:#0A0B0D;}
+.bg-hts1-2{background-color:#1B3659;}
+.bg-hts1-3{background-color:#131B26;}
+.bg-hts1-4{background-color:#4E7DA6;}
+.bg-hts1-5{background-color:#659DBF;}
+.bg-hts2-1{background-color:#D9D7D7;}
+.bg-hts2-2{background-color:#232659;}
+.bg-hts2-3{background-color:#4D7332;}
+.bg-hts2-4{background-color:#A0A672;}
+.bg-hts2-5{background-color:#A6A380;}
+.bg-hts3-1{background-color:#355473;}
+.bg-hts3-2{background-color:#D7D9D7;}
+.bg-hts3-3{background-color:#57594D;}
+.bg-hts3-4{background-color:#BFBC95;}
+.bg-hts3-5{background-color:#A6A498;}
+.bg-hts4-1{background-color:#CFD0D5;}
+.bg-hts4-2{background-color:#2E5165;}
+.bg-hts4-3{background-color:#707069;}
+.bg-hts4-4{background-color:#856F37;}
+.bg-hts4-5{background-color:#C0B38D;}
+.bg-hts5-1{background-color:#F2F0F0;}
+.bg-hts5-2{background-color:#BABFB8;}
+.bg-hts5-3{background-color:#818C68;}
+.bg-hts5-4{background-color:#52591B;}
+.bg-hts5-5{background-color:#593B2A;}
+.bg-hts6-1{background-color:#C7D9D2;}
+.bg-hts6-2{background-color:#BFB999;}
+.bg-hts6-3{background-color:#BF8D50;}
+.bg-hts6-4{background-color:#A66B37;}
+.bg-hts6-5{background-color:#8C3C2A;}
+.bg-hts7-1{background-color:#BFBFAE;}
+.bg-hts7-2{background-color:#A68053;}
+.bg-hts7-3{background-color:#40201D;}
+.bg-hts7-4{background-color:#8C2323;}
+.bg-hts7-5{background-color:#BF3939;}
+.bg-hts8-1{background-color:#88898C;}
+.bg-hts8-2{background-color:#8EA8BF;}
+.bg-hts8-3{background-color:#D9D9D9;}
+.bg-hts8-4{background-color:#735634;}
+.bg-hts8-5{background-color:#594842;}
+.bg-hts9-1{background-color:#BF7373;}
+.bg-hts9-2{background-color:#8C3D35;}
+.bg-hts9-3{background-color:#DFEBF2;}
+.bg-hts9-4{background-color:#283959;}
+.bg-hts9-5{background-color:#2C3673;}
+.bg-hts10-1{background-color:#027373;}
+.bg-hts10-2{background-color:#012626;}
+.bg-hts10-3{background-color:#DCF2F2;}
+.bg-hts10-4{background-color:#03A696;}
+.bg-hts10-5{background-color:#14D9C5;}
+.bg-hts11-1{background-color:#8FADBF;}
+.bg-hts11-2{background-color:#D7D9D9;}
+.bg-hts11-3{background-color:#5E7332;}
+.bg-hts11-4{background-color:#868C56;}
+.bg-hts11-5{background-color:#59492C;}
+.bg-hts12-1{background-color:#A6A08D;}
+.bg-hts12-2{background-color:#A68A68;}
+.bg-hts12-3{background-color:#73624D;}
+.bg-hts12-4{background-color:#40271E;}
+.bg-hts12-5{background-color:#261613;}
+.bg-hts13-1{background-color:#595332;}
+.bg-hts13-2{background-color:#8C8356;}
+.bg-hts13-3{background-color:#C9C9C9;}
+.bg-hts13-4{background-color:#A63D33;}
+.bg-hts13-5{background-color:#732D27;}
+.bg-hts14-1{background-color:#2F7334;}
+.bg-hts14-2{background-color:#255929;}
+.bg-hts14-3{background-color:#CECECA;}
+.bg-hts14-4{background-color:#BD9137;}
+.bg-hts14-5{background-color:#BF4539;}
+.bg-hts15-1{background-color:#F2F2F2;}
+.bg-hts15-2{background-color:#F2C299;}
+.bg-hts15-3{background-color:#BF532C;}
+.bg-hts15-4{background-color:#A62C21;}
+.bg-hts15-5{background-color:#73241D;}
+.bg-hts16-1{background-color:#5A6073;}
+.bg-hts16-2{background-color:#949BA6;}
+.bg-hts16-3{background-color:#E9F1F2;}
+.bg-hts16-4{background-color:#403935;}
+.bg-hts16-5{background-color:#836865;}
+.bg-hts17-1{background-color:#4F5950;}
+.bg-hts17-2{background-color:#898C7D;}
+.bg-hts17-3{background-color:#D8D9CC;}
+.bg-hts17-4{background-color:#F2F2F2;}
+.bg-hts17-5{background-color:#8C5D42;}
+.bg-hts18-1{background-color:#0A0D0B;}
+.bg-hts18-2{background-color:#D6D9D2;}
+.bg-hts18-3{background-color:#A4A6A1;}
+.bg-hts18-4{background-color:#575951;}
+.bg-hts18-5{background-color:#F2F2F0;}
+.bg-hts19-1{background-color:#BF935E;}
+.bg-hts19-2{background-color:#DFD9CD;}
+.bg-hts19-3{background-color:#8C613B;}
+.bg-hts19-4{background-color:#59422E;}
+.bg-hts19-5{background-color:#402722;}
+.bg-hts20-1{background-color:#736F5F;}
+.bg-hts20-2{background-color:#D9C58B;}
+.bg-hts20-3{background-color:#A69576;}
+.bg-hts20-4{background-color:#BF3434;}
+.bg-hts20-5{background-color:#262626;}
+.bg-hts21-1{background-color:#1D2426;}
+.bg-hts21-2{background-color:#56736B;}
+.bg-hts21-3{background-color:#CCD9D5;}
+.bg-hts21-4{background-color:#AEBFB9;}
+.bg-hts21-5{background-color:#A1A67C;}
+.bg-hts22-1{background-color:#10468C;}
+.bg-hts22-2{background-color:#0A2C59;}
+.bg-hts22-3{background-color:#11538C;}
+.bg-hts22-4{background-color:#1E3040;}
+.bg-hts22-5{background-color:#A3BFD9;}
+.bg-hts23-1{background-color:#A3B4BF;}
+.bg-hts23-2{background-color:#9FA66D;}
+.bg-hts23-3{background-color:#585936;}
+.bg-hts23-4{background-color:#8B8C6C;}
+.bg-hts23-5{background-color:#BFB9A4;}
+.bg-hts24-1{background-color:#4E54BF;}
+.bg-hts24-2{background-color:#5B5FA6;}
+.bg-hts24-3{background-color:#A7BAF2;}
+.bg-hts24-4{background-color:#A0BED9;}
+.bg-hts24-5{background-color:#8C8674;}
+.bg-hts25-1{background-color:#732F3B;}
+.bg-hts25-2{background-color:#D7D9D9;}
+.bg-hts25-3{background-color:#A66A21;}
+.bg-hts25-4{background-color:#8C7251;}
+.bg-hts25-5{background-color:#403026;}
+.bg-hts26-1{background-color:#D9C8A9;}
+.bg-hts26-2{background-color:#BF9D73;}
+.bg-hts26-3{background-color:#8C5627;}
+.bg-hts26-4{background-color:#40231D;}
+.bg-hts26-5{background-color:#8C251C;}
+.bg-hts27-1{background-color:#A8AEBF;}
+.bg-hts27-2{background-color:#D5E5F2;}
+.bg-hts27-3{background-color:#BF9E75;}
+.bg-hts27-4{background-color:#73573F;}
+.bg-hts27-5{background-color:#261E1C;}
+.bg-hts28-1{background-color:#6C5573;}
+.bg-hts28-2{background-color:#A08AA6;}
+.bg-hts28-3{background-color:#D9D9D9;}
+.bg-hts28-4{background-color:#BFBFBD;}
+.bg-hts28-5{background-color:#222B2F;}
+
+.backs {
+display:flex;
+justify-content: center;
+top: 0%;
+left: 0%;
+position: absolute;
+transform: translate(-50%, 110%);
+
+}
+
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #2a1254;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-family: 'Arial';
+  font-size: 15px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: -webkit-box;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #2a1254;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
